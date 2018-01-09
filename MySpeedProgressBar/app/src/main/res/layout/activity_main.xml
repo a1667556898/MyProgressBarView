@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myspeedprogressbar.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/level1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="青铜" />
+
+        <TextView
+            android:id="@+id/level2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="黄金" />
+
+        <TextView
+            android:id="@+id/level3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="钻石" />
+
+        <TextView
+            android:id="@+id/level4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="王者" />
+    </LinearLayout>
+
+    <com.example.administrator.myspeedprogressbar.MySpeedProgressView
+        android:id="@+id/mySpeedProgress"
+        android:layout_width="match_parent"
+       android:layout_below="@id/ll"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:levelTextSize="15sp"
+        app:levelTextUnChooseColor="#ff00ff"
+        app:levelTextChooseColor="#000000"
+        app:progressBgColor="#999999"
+        app:progressStartColor="#00ffff"
+        app:progressEndColor="#0000ff"
+        android:padding="20dp"
+        app:progressHeight="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mySpeedProgress"
+        android:text="哈哈哈"/>
+</RelativeLayout>
